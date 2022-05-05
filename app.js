@@ -10,6 +10,6 @@ app.get('/', (req, res) => {
   res.render('index' ,{});
 });
 
-const server = app.listen(9000, () => {
+const server = app.listen(3000, () => {
   console.log('Express listening on port:' + server.address().port);
 })

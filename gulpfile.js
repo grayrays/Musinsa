@@ -25,7 +25,7 @@ const apfBrwsowsers = [
 const PATH = {
   HTML: 'workspace/html',
   ASSETS: {
-    FONTS: './workspace/assets/fonts',
+    //FONTS: './workspace/assets/fonts',
     IMAGES: './workspace/assets/images',
     STYLE: './workspace/assets/css',
     SCRIPT: './workspace/assets/js',
@@ -35,7 +35,7 @@ const PATH = {
 DEST_PATH = {
   HTML: './dist',
   ASSETS: {
-    FONTS: './dist/assets/fonts',
+    //FONTS: './dist/assets/fonts',
     IMAGES: './dist/assets/images',
     STYLE: './dist/assets/css',
     SCRIPT: './dist/assets/js',
@@ -139,7 +139,7 @@ gulp.task('imagemin', () => {
     resolve();
   });
 });
-
+/*
 gulp.task('fonts', () => {
   return new Promise(resolve => {
     gulp.src(PATH.ASSETS.FONTS + '/*.*')
@@ -148,6 +148,7 @@ gulp.task('fonts', () => {
     resolve();
   });
 });
+*/
 
 gulp.task('nodemon:start', () => {
   return new Promise(resolve => {
@@ -200,8 +201,8 @@ gulp.task('clean', () => {
 gulp.task('browserSync', () => {
   return new Promise(resolve => {
     browserSync.init(null, {
-      proxy: 'http://localhost:9000',
-      port: 9001
+      proxy: 'http://localhost:3000',
+      port: 3001
     });
     resolve();
   });
@@ -215,7 +216,7 @@ gulp.task('default',
     'script:build',
     'library',
     'imagemin',
-    'fonts',
+    //'fonts',
     'nodemon:start',
     'browserSync',
     'watch'
