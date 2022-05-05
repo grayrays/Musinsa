@@ -1,0 +1,20 @@
+<!--
+  <ul class="list-prod">
+    <li><a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img1.jpg" alt="버켄스탁 인기상품 재입고" /></a></li>
+    <li class="all">
+      <a href="#none">
+        <p class="count"><b>58</b>개 상품</p>
+        <span class="bt-small">전체보기</span>
+      </a>
+    </li>
+  </ul>
+-->
+<ul class="list-prod">@@for (let i = 0; i < length; i++){
+  ${ i < 7 ? (`<li><a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img${images}.jpg" alt="${item}" /></a></li>`) : 
+    (`<li class="all">
+    <a href="#none">
+      <p class="count"><b>${total}</b>개 상품</p>
+      <span class="bt-small">전체보기</span>
+    </a>
+  </li>`)}}
+</ul>

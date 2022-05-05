@@ -1,0 +1,27 @@
+<!-- loop
+<a href="#none" class="list-box">
+  <p class="rank">1</p>
+  <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img1.jpg" alt="라퍼지스토어" /></p>
+  <dl class="list-info">
+    <dt class="brand">라퍼지스토어</dt>
+    <dd class="price">
+      74,900원
+      <span class="discount">24%</span>
+      <span class="coupon">쿠폰</span>
+    </dd>
+  </dl>
+</a>
+-->@@for (let i = 0; i < lists.length; i++) {
+<a href="#none" class="list-box">
+  <p class="rank">${lists[i].rank}</p>
+  <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img${lists[i].images}.jpg" alt="${lists[i].brand}" /></p>
+  <dl class="list-info">
+    <dt class="brand">${lists[i].brand}</dt>
+    <dd class="price">
+      ${lists[i].price}원 ${
+        (lists[i].discount !== undefined ? `<span class="discount">${lists[i].discount}%</span>` : '') +
+        (lists[i].coupon == true ? `<span class="coupon">쿠폰</span>` : '')
+      }
+    </dd>
+  </dl>
+</a>}

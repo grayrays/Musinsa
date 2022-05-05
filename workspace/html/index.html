@@ -1,0 +1,909 @@
+@@include('./include/header.html', {
+  "title": "Main"
+})
+
+  @@include('./include/visual.html')
+
+  <!-- START :: musinsa-container -->
+  <div class="musinsa-container">
+    <h2 class="blind">메인 탭</h2>
+    <ul class="tabs-main">
+      <li class="active"><a href="#none">랭킹</a></li>
+      <li><a href="#none">코디</a></li>
+      <li><a href="#none">업데이트</a></li>
+    </ul>
+
+    <section class="main-ranking contents">
+      <header class="main-title">
+        <h2>상품 랭킹</h2>
+        <a href="#none" class="bt-go arr">전체</a>
+        <a href="#none" class="bt-filter">전체 연령대</a>
+      </header>
+
+      <nav class="tabs-sub">
+        <h3 class="blind">상품 랭킹 카테고리</h3>
+        <div class="tabs-inner">
+          <a href="#none" class="active">전체</a>
+          <a href="#none">상의</a>
+          <a href="#none">아우터</a>
+          <a href="#none">바지</a>
+          <a href="#none">가방</a>
+          <a href="#none">신발</a>
+          <a href="#none">스니커즈</a>
+          <a href="#none">양말</a>
+          <a href="#none">모자</a>
+          <a href="#none">레그웨어</a>
+        </div>
+      </nav>
+      <div class="b-list">
+        @@include('./include/list_rank.html', {
+          'lists': [
+            { 
+              'rank': '1',
+              'images': '1',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '24',
+              'coupon': true
+            }, {
+              'rank': '2',
+              'images': '2',
+              'brand': '제로',
+              'price': '39,000',
+              'coupon': true
+            }, {
+              'rank': '3',
+              'images': '3',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            }, {
+              'rank': '4',
+              'images': '4',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'coupon': true
+            }, {
+              'rank': '5',
+              'images': '5',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            },
+          ]
+        })
+      </div>
+      <!-- //b-list-->
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹',
+              'images': '1.jpg',
+            }, {
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹 텍스트가 길어서 3줄이 넘어갈 경우 화면 테스트',
+              'images': '2.jpg',
+            }, {
+              'subject': '짧은 타이틀일 경우',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+
+      <div class="b-list">
+        @@include('./include/list_rank.html', {
+          'lists': [
+            { 
+              'rank': '6',
+              'images': '6',
+              'brand': '5252 바이 오아이오아이',
+              'price': '530,000',
+            }, {
+              'rank': '7',
+              'images': '7',
+              'brand': '엠엠지엘',
+              'price': '269,000',
+              'discount': '20',
+            }, {
+              'rank': '8',
+              'images': '8',
+              'brand': '엄브로',
+              'price': '149,000'
+            }, {
+              'rank': '9',
+              'images': '5',
+              'brand': '예일',
+              'price': '55,200',
+              'discount': '20',
+            }, {
+              'rank': '10',
+              'images': '1',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            }, {
+              'rank': '11',
+              'images': '2',
+              'brand': '멜란지 마스터',
+              'price': '39,900',
+              'coupon': true
+            }, {
+              'rank': '12',
+              'images': '3',
+              'brand': '커버낫',
+              'price': '77,400',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '13',
+              'images': '4',
+              'brand': '무신사 스탠다드',
+              'price': '32,900',
+              'coupon': true
+            }, {
+              'rank': '14',
+              'images': '5',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            },
+          ]
+        })
+      </div>
+
+      <div class="banner-type2">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '3.png',
+              'color': '#484848',
+            }, {
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '3.png',
+              'color': '#2Ac1BC',
+            }, {
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '3.png',
+              'color': '#FF6F6F',
+            },
+          ]
+        })
+      </div>
+
+      <div class="b-list">
+        @@include('./include/list_rank.html', {
+          'lists': [
+            { 
+              'rank': '15',
+              'images': '6',
+              'brand': '5252 바이 오아이오아이',
+              'price': '530,000',
+            }, {
+              'rank': '16',
+              'images': '7',
+              'brand': '엠엠지엘',
+              'price': '269,000',
+              'discount': '20',
+            }, {
+              'rank': '17',
+              'images': '8',
+              'brand': '엄브로',
+              'price': '149,000'
+            }, {
+              'rank': '18',
+              'images': '5',
+              'brand': '예일',
+              'price': '55,200',
+              'discount': '20',
+            }, {
+              'rank': '19',
+              'images': '1',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            }, {
+              'rank': '20',
+              'images': '2',
+              'brand': '멜란지 마스터',
+              'price': '39,900',
+              'coupon': true
+            }, {
+              'rank': '21',
+              'images': '3',
+              'brand': '커버낫',
+              'price': '77,400',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '22',
+              'images': '4',
+              'brand': '무신사 스탠다드',
+              'price': '32,900',
+              'coupon': true
+            }, {
+              'rank': '23',
+              'images': '5',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '24',
+              'images': '3',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '25',
+              'images': '2',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '26',
+              'images': '1',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            },
+          ]
+        })
+      </div>
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '마르지엘라 서머 페스티벌 컬렉션',
+              'date': '6.28 - 7.23',
+              'images': '2.jpg',
+            }, {
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹 텍스트가 길어서 3줄이 넘어갈 경우 화면 테스트',
+              'date': '6.28 - 7.23',
+              'images': '1.jpg',
+            }, {
+              'subject': '짧은 타이틀일 경우',
+              'date': '6.28 - 7.23',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+
+      <div class="b-list">
+        @@include('./include/list_rank.html', {
+          'lists': [
+            { 
+              'rank': '27',
+              'images': '6',
+              'brand': '5252 바이 오아이오아이',
+              'price': '530,000',
+            }, {
+              'rank': '28',
+              'images': '7',
+              'brand': '엠엠지엘',
+              'price': '269,000',
+              'discount': '20',
+            }, {
+              'rank': '29',
+              'images': '8',
+              'brand': '엄브로',
+              'price': '149,000'
+            }, {
+              'rank': '30',
+              'images': '5',
+              'brand': '예일',
+              'price': '55,200',
+              'discount': '20',
+            }, {
+              'rank': '31',
+              'images': '1',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            }, {
+              'rank': '32',
+              'images': '2',
+              'brand': '멜란지 마스터',
+              'price': '39,900',
+              'coupon': true
+            }, {
+              'rank': '33',
+              'images': '3',
+              'brand': '커버낫',
+              'price': '77,400',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '34',
+              'images': '4',
+              'brand': '무신사 스탠다드',
+              'price': '32,900',
+              'coupon': true
+            }, {
+              'rank': '35',
+              'images': '5',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '36',
+              'images': '3',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '37',
+              'images': '2',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '38',
+              'images': '1',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            },
+          ]
+        })
+      </div>
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '신발 좋아요 신발 좋아요 신발 좋아요',
+              'brand': '키르시',
+              'reply': '133',
+              'images': '2.jpg',
+            }, {
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹 텍스트가 길어서 3줄이 넘어갈 경우 화면 테스트',
+              'brand': '마르지엘라',
+              'reply': '20',
+              'images': '1.jpg',
+            }, {
+              'subject': '짧은 타이틀일 경우',
+              'brand': '키르시',
+              'reply': '2023',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+
+      <div class="b-list">
+        @@include('./include/list_rank.html', {
+          'lists': [
+            { 
+              'rank': '39',
+              'images': '6',
+              'brand': '5252 바이 오아이오아이',
+              'price': '530,000',
+            }, {
+              'rank': '40',
+              'images': '7',
+              'brand': '엠엠지엘',
+              'price': '269,000',
+              'discount': '20',
+            }, {
+              'rank': '41',
+              'images': '8',
+              'brand': '엄브로',
+              'price': '149,000'
+            }, {
+              'rank': '42',
+              'images': '5',
+              'brand': '예일',
+              'price': '55,200',
+              'discount': '20',
+            }, {
+              'rank': '43',
+              'images': '1',
+              'brand': '라퍼지스토어',
+              'price': '74,900',
+              'discount': '20',
+            }, {
+              'rank': '44',
+              'images': '2',
+              'brand': '멜란지 마스터',
+              'price': '39,900',
+              'coupon': true
+            }, {
+              'rank': '45',
+              'images': '3',
+              'brand': '커버낫',
+              'price': '77,400',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '46',
+              'images': '4',
+              'brand': '무신사 스탠다드',
+              'price': '32,900',
+              'coupon': true
+            }, {
+              'rank': '47',
+              'images': '5',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '48',
+              'images': '3',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '49',
+              'images': '2',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            }, {
+              'rank': '50',
+              'images': '1',
+              'brand': '인사일런스',
+              'price': '231,000',
+              'discount': '20',
+              'coupon': true
+            },
+          ]
+        })
+      </div>
+
+      <p class="last-renewal">5분 전 갱신</p>
+      <p class="btn-group"><a href="#none" class="bt-round arr">상품 랭킹 전체 보기</a></p>
+    </section>
+    <!-- //main-ranking -->
+
+    <section class="main-coordi contents">
+      <h2 class="blind">코디</h2>
+      <nav class="tabs-sub">
+        <h3 class="blind">브랜드 목록</h3>
+        <div class="tabs-inner">
+          <a href="#none" class="active">무신사 스탠다드</a>
+          <a href="#none">나이키</a>
+          <a href="#none">247 서울</a>
+          <a href="#none">비슬로우</a>
+          <a href="#none">아크네</a>
+        </div>
+      </nav>
+
+      <div class="b-brand">
+        <!-- loop -->
+        <div class="list-box">
+          <a href="#none" class="coordi"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img1.jpg" alt="무신사 스탠다드" /></a>
+          <a href="#none" class="product">
+            <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img1.jpg" alt="무신사 스탠다드" /></p>
+            <dl class="list-info">
+              <dt>무신사 스탠다드</dt>
+              <dd class="price">45,900원 <span class="discount">40%</span></dd>
+            </dl>
+          </a>
+        </div>
+        <!-- //loop -->
+        <div class="list-box">
+          <a href="#none" class="coordi"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img2.jpg" alt="무신사 스탠다드" /></a>
+          <a href="#none" class="product">
+            <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img2.jpg" alt="무신사 스탠다드" /></p>
+            <dl class="list-info">
+              <dt>무신사 스탠다드</dt>
+              <dd class="price">45,900원 <span class="discount">40%</span></dd>
+            </dl>
+          </a>
+        </div>
+        <div class="list-box">
+          <a href="#none" class="coordi"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img3.jpg" alt="무신사 스탠다드" /></a>
+          <a href="#none" class="product">
+            <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img3.jpg" alt="무신사 스탠다드" /></p>
+            <dl class="list-info">
+              <dt>무신사 스탠다드</dt>
+              <dd class="price">45,900원 <span class="discount">40%</span></dd>
+            </dl>
+          </a>
+        </div>
+        <div class="list-box">
+          <a href="#none" class="coordi"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img4.jpg" alt="무신사 스탠다드" /></a>
+          <a href="#none" class="product">
+            <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/goods/img4.jpg" alt="무신사 스탠다드" /></p>
+            <dl class="list-info">
+              <dt>무신사 스탠다드</dt>
+              <dd class="price">45,900원 <span class="discount">40%</span></dd>
+            </dl>
+          </a>
+        </div>
+      </div>
+      <p class="btn-group"><a href="#none" class="bt-round arr">전체 보기</a></p>
+
+      <nav class="tabs-sub">
+        <h3 class="blind">스타일 목록</h3>
+        <div class="tabs-inner">
+          <a href="#none" class="active">스포츠&amp;아웃도어</a>
+          <a href="#none">포멀&amp;어반 캐주얼</a>
+          <a href="#none">뷰티</a>
+          <a href="#none">하이 패션</a>
+          <a href="#none">아크네</a>
+        </div>
+      </nav>
+      <div class="b-styles">
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지1" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img6.jpg" alt="패션 이미지2" /></a>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img7.jpg" alt="패션 이미지3" />
+        </a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지4" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img8.jpg" alt="패션 이미지5" /></a>
+        <div class="shop-list">
+          <a href="#none">
+            <h4>코디숍</h4>
+            <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img1.jpg" alt="코디숍" />
+          </a>
+          <a href="#none">
+            <h4>코디맵</h4>
+            <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img4.jpg" alt="코디맵" />
+          </a>
+          <a href="#none">
+            <h4>브랜드 스냅</h4>
+            <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img3.jpg" alt="브랜드 스냅" />
+          </a>
+          <a href="#none">
+            <h4>스트릿 스냅</h4>
+            <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img2.jpg" alt="스트릿 스냅" />
+          </a>
+        </div>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img6.jpg" alt="패션 이미지2" />
+        </a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img7.jpg" alt="패션 이미지3" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지4" /></a>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img8.jpg" alt="패션 이미지5" />
+        </a>
+      </div>
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹',
+              'images': '1.jpg',
+            }, {
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹 텍스트가 길어서 3줄이 넘어갈 경우 화면 테스트',
+              'images': '2.jpg',
+            }, {
+              'subject': '짧은 타이틀일 경우',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+
+      <nav class="tabs-sub">
+        <h3 class="blind">스타일 목록</h3>
+        <div class="tabs-inner">
+          <a href="#none">스포츠&amp;아웃도어</a>
+          <a href="#none" class="active">포멀&amp;어반 캐주얼</a>
+          <a href="#none">뷰티</a>
+          <a href="#none">하이 패션</a>
+          <a href="#none">아크네</a>
+        </div>
+      </nav>
+      <div class="b-styles">
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지1" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img6.jpg" alt="패션 이미지2" /></a>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img7.jpg" alt="패션 이미지3" />
+        </a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지4" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img8.jpg" alt="패션 이미지5" /></a>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img6.jpg" alt="패션 이미지2" />
+        </a>
+        <a href="#none">
+          <span class="video"><img src="./assets/images/ic_video.svg" alt="영상" /></span>
+          <img src="https://image.msscdn.net/musinsaUI/homework/coordi/img7.jpg" alt="패션 이미지3" />
+        </a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img5.jpg" alt="패션 이미지4" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img8.jpg" alt="패션 이미지5" /></a>
+        <a href="#none"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img8.jpg" alt="패션 이미지5" /></a>
+      </div>
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '2.jpg',
+            }, {
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '1.jpg',
+            }, {
+              'subject': '아디다스 운동화 4,900원',
+              'explan': '신규 회원 가입 이벤트 참여하기',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+    </section>
+    <!-- //main-coordi -->
+
+    <section class="main-update contents">
+      <h2 class="blind">업데이트</h2>
+      <div class="b-update-main">
+        <a href="#none" class="list-box">
+          <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img1.jpg" alt="스웨트셔츠 &amp;amp; 슬랙스 신상품 발매" /></p>
+          <dl>
+            <dt>스웨트셔츠 &amp; 슬랙스 신상품 발매</dt>
+            <dd class="brand">마땡킴 <span class="reply-count">133개 댓글</span></dd>
+          </dl>
+        </a>
+        <a href="#none" class="list-box">
+          <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img2.jpg" alt="이벳필드 협업 컬렉션 워셔블 니트 한정 발매" /></p>
+          <dl>
+            <dt>이벳필드 협업 컬렉션 워셔블 니트 한정 발매 </dt>
+            <dd class="brand">마땡킴 <span class="reply-count">133개 댓글</span></dd>
+          </dl>
+        </a>
+        <a href="#none" class="list-box">
+          <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img3.jpg" alt="이벳필드 협업 컬렉션 워셔블 니트 한정 발매" /></p>
+          <dl>
+            <dt>이벳필드 협업 컬렉션 워셔블 니트 한정 발매</dt>
+            <dd class="brand">마땡킴 <span class="reply-count">133개 댓글</span></dd>
+          </dl>
+        </a>
+        <a href="#none" class="list-box">
+          <p class="thumbs"><img src="https://image.msscdn.net/musinsaUI/homework/coordi/img4.jpg" alt="뉴 체리라인 스웨트셔츠 &amp; 액세서리 신상품 선발매" /></p>
+          <dl>
+            <dt>뉴 체리라인 스웨트셔츠 &amp; 액세서리 신상품 선발매 액세서리 신상품 선발매</dt>
+            <dd class="brand">마땡킴 <span class="reply-count">133개 댓글</span></dd>
+          </dl>
+        </a>
+      </div>
+      <p class="btn-group"><a href="#none" class="bt-round refresh">새로운 추천</a></p>
+
+      <header class="main-title center">
+        <h2>업데이트 소식</h2>
+        <a href="#none" class="bt-go arr">전체</a>
+      </header>
+
+      <nav class="tabs-sub">
+        <h3 class="blind">업데이트 목록</h3>
+        <div class="tabs-inner">
+          <a href="#none" class="active">MD추천</a>
+          <a href="#none">재입고</a>
+          <a href="#none">세일 소식</a>
+          <a href="#none">인기 상품</a>
+          <a href="#none">신상품</a>
+          <a href="#none">이벤트</a>
+          <a href="#none">입점</a>
+        </div>
+      </nav>
+      <!-- b-update 목록 3개 반복 -->
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '7',
+          'total': '58',
+          'length': 8,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '1',
+          'total': '133',
+          'length': 4,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '2',
+          'total': '58',
+          'length': 7,
+        })
+      </div>
+      <!-- //b-update 목록 3개 반복 -->
+
+      <div class="banner-type1">
+        @@include('./include/list_banner.html', {
+          'lists': [
+            { 
+              'subject': '마르지엘라 서머 페스티벌 컬렉션',
+              'date': '6.28 - 7.23',
+              'images': '2.jpg',
+            }, {
+              'subject': '손 피부를 보호해줄 핸드크림 추천 랭킹 텍스트가 길어서 3줄이 넘어갈 경우 화면 테스트',
+              'date': '6.28 - 7.23',
+              'images': '1.jpg',
+            }, {
+              'subject': '짧은 타이틀일 경우',
+              'date': '6.28 - 7.23',
+              'images': '3.png',
+            },
+          ]
+        })
+      </div>
+
+      <!-- b-update 목록 5개 반복 -->
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '4',
+          'total': '58',
+          'length': 8,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '3',
+          'total': '58',
+          'length': 4,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '7',
+          'total': '58',
+          'length': 6,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '4',
+          'total': '58',
+          'length': 8,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '8',
+          'total': '58',
+          'length': 6,
+        })
+      </div>
+      <!-- //b-update 목록 5개 반복 -->
+
+      <nav class="tabs-sub">
+        <h3 class="blind">업데이트 목록</h3>
+        <div class="tabs-inner">
+          <a href="#none">MD추천</a>
+          <a href="#none" class="active">재입고</a>
+          <a href="#none">세일 소식</a>
+          <a href="#none">인기 상품</a>
+          <a href="#none">신상품</a>
+          <a href="#none">이벤트</a>
+          <a href="#none">입점</a>
+        </div>
+      </nav>
+
+      <!-- b-update 목록 5개 반복 -->
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '4',
+          'total': '58',
+          'length': 8,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '3',
+          'total': '58',
+          'length': 4,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '7',
+          'total': '58',
+          'length': 6,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '4',
+          'total': '58',
+          'length': 8,
+        })
+      </div>
+      <div class="b-update">
+        <a href="#none" class="b-subject">
+          <h3>버켄스탁 인기상품 재입고</h3>
+          <div class="info">15분전<span class="reply-count">133개 댓글</span></div>
+        </a>
+        @@include('./include/list_update.html', {
+          'item': '버켄스탁 인기상품 재입고',
+          'images': '8',
+          'total': '58',
+          'length': 6,
+        })
+      </div>
+      <!-- //b-update 목록 5개 반복 -->
+    </section>
+    <!-- //main-update -->
+  </div>
+  <!-- //END :: musinsa-container -->
+
+@@include('./include/footer.html')

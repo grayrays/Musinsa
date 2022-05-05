@@ -1,0 +1,24 @@
+<div class="banner-contents swiper-wrapper">
+  <!-- style, explan, date 케이스에 따라 추가/삭제
+    <a href="#none" class="list-banner">
+      <div class="banner-box" style="background-color:#484848;">
+        <h3>타이틀</h3>
+        <p class="explan">서브 텍스트</p>
+        <p class="date">6.28 - 7.23</p>
+        <p class="brand">키르시 <span class="reply-count">133개 댓글</span></p>
+      </div>
+      <img src="https://image.msscdn.net/musinsaUI/homework/banner/sub3.png" alt="타이틀" />
+    </a>
+  --> @@for (let i = 0; i < lists.length; i++) {
+  <a href="#none" class="list-banner swiper-slide">
+    ${ lists[i].color == undefined ? '<div class="banner-box">' : '<div class="banner-box" style="background-color:'+lists[i].color+';">'}
+      <h3>${lists[i].subject}</h3>${ lists[i].explan !== undefined && lists[i].date !== undefined && lists[i].brand !== undefined ? ``: (
+        (lists[i].explan !== undefined ? `<p class="explan">${lists[i].explan}</p>` : '' ) + 
+        (lists[i].date !== undefined ? `<p class="date">${lists[i].date}</p>` : '') +
+        (lists[i].brand !== undefined ? `<p class="brand">${lists[i].brand} <span class="reply-count">${lists[i].reply}개 댓글</span></p>` : ''))
+      }
+    </div>
+    <img src="https://image.msscdn.net/musinsaUI/homework/banner/sub`+lists[i].images+`" alt="`+lists[i].subject+`" />
+  </a>}
+</div>
+<div class="swiper-pagination"></div>
